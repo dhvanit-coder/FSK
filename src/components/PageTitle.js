@@ -1,0 +1,20 @@
+import { useState, useEffect } from "react";
+
+function PageTitle() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Count is ${count}`;
+  }, [count]);
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
+  );
+}
+
+export default PageTitle;
