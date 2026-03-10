@@ -26,64 +26,50 @@ import Counter from "./components/Counter";
 
 function App() {
   return (
-    // <><Student
-    // s_name="Raj Mehta"
-    // s_age="20"
-    // s_course="iMCA"
-    // s_semester="Fourth Semester" />
-    <Router>
+    <>
 
-      <Header />
-      <Navbar />
+      <Router>
+        <Header />
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/student" element={<Student />} />
-        <Route path="/hello" element={<Hello />} />
-        <Route path="/clock" element={<Clock />} />
-        <Route path="/timer" element={<Timer />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/calculator" element={<Calculator />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="/card" element={<Card />} />
-        <Route path="/pagetitle" element={<PageTitle />} />
-        <Route path="/changecolor" element={<ChangeColor />} />
-        <Route path="/toggletext" element={<ToggleText />} />
-        <Route path="/effect" element={<Effect />} />
-        <Route path="/display" element={<Display />} />
-        <Route path="/displaydetails" element={<DisplayDetails />} />
-        <Route path="/page" element={<Page />} />
-        <Route path="/reducer" element={<ReducerDemoExample />} />
-        <Route path="/array" element={<Array />} />
-        <Route path="/fetch" element={<FetchDataJSN />} />
-      </Routes>
+          <Route
+            path="/student"
+            element={
+              <Student
+                s_name="Raj Mehta"
+                s_age="20"
+                s_course="iMCA"
+                s_semester="Fourth Semester"
+              />
+            }
+          />
 
-      <Footer />
+          <Route path="/hello" element={<Hello />} />
+          <Route path="/clock" element={<Clock />} />
+          <Route path="/timer" element={<Timer />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/calculator" element={<Calculator />} />
 
-    </Router>
+          <Route path="/card" element={<Card />} />
+          <Route path="/pagetitle" element={<PageTitle />} />
+          <Route path="/changecolor" element={<ChangeColor />} />
+          <Route path="/toggletext" element={<ToggleText />} />
+          <Route path="/effect" element={<Effect />} />
+          <Route path="/display" element={<Display />} />
+          <Route path="/displaydetails" element={<DisplayDetails />} />
+          <Route path="/page" element={<Page />} />
+          <Route path="/reducer" element={<ReducerDemoExample />} />
+          <Route path="/array" element={<Array />} />
+          <Route path="/fetch" element={<FetchDataJSN />} />
+        </Routes>
+
+        <Footer />
+      </Router>
+    </>
   );
 }
 
 export default App;
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
