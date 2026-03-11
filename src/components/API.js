@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function UserData() {
+function API() {
   const [userId, setUserId] = useState(1);
   const [user, setUser] = useState({});
 
@@ -21,4 +21,4 @@ function UserData() {
     </div>
   );
 }
-export default UserData;
+export default API;
