@@ -2,14 +2,12 @@ function Home() {
   return (
     <div className="container mt-4">
 
-      {/* HERO SECTION */}
       <div className="bg-dark text-white text-center p-5 rounded hero">
         <h1>Welcome to My Website 🚀</h1>
         <p>Build amazing things with React & Bootstrap</p>
         <button className="btn btn-primary mt-3">Get Started</button>
       </div>
 
-      {/* FEATURES */}
       <div className="row mt-5 text-center">
         <div className="col-md-4">
           <div className="card shadow p-4 feature-card">
@@ -33,12 +31,11 @@ function Home() {
         </div>
       </div>
 
-      {/* IMAGE SECTION */}
       <div className="mt-5 text-center">
         <img 
           src="https://via.placeholder.com/800x300"
           className="img-fluid rounded shadow"
-          alt="banner"
+          alt=""
         />
       </div>
 
@@ -71,7 +68,6 @@ function Home() {
         </div>
       </div>
 
-      {/* BLOG */}
       <h2 className="mt-5 text-center">Blog</h2>
       <div className="card p-4 mt-3 shadow blog-card">
         Latest Updates Coming Soon...
